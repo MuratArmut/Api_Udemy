@@ -56,7 +56,8 @@ public class C01_SoftAssert {
 
         Response response = given().when().get(url);
             // System.out.println(response); response objesi böyle yazdırılamaz
-            // response.prettyPrint(); // böyle yazırılır.
+            // response.prettyPrint(); // böyle yazırılır.Sadece bodyi yazdırır
+            // response.prettyPeek(); //response özelliklerini de yazdırır
 
 
         // 4) ASSERTION YAP.

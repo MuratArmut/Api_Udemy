@@ -34,7 +34,7 @@ public class C10_JsonPathKullanimi {
         kisiBilgileriJsonObj.put("address",adresJsonObj);
         kisiBilgileriJsonObj.put("phoneNumbers",telefonBilgileriArr);
 
-        System.out.println(kisiBilgileriJsonObj);
+        System.out.println("==> "+kisiBilgileriJsonObj);
 
         System.out.println("firstName : "+kisiBilgileriJsonObj.get("firstName"));
         System.out.println("lastName : "+kisiBilgileriJsonObj.get("lastName"));

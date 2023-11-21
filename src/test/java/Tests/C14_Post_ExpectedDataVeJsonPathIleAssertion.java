@@ -85,6 +85,7 @@ public class C14_Post_ExpectedDataVeJsonPathIleAssertion {
         JsonPath responseJsonPath= response.jsonPath();
         // ilk yazilan expected ====> olusturdugumuz JSonObject : expectedData
         // ikinci yazilan actual ===> response : responseJsonPath
+
         assertEquals(expectedData.getJSONObject("booking").get("firstname"),
                 responseJsonPath.get("booking.firstname"));
         assertEquals(expectedData.getJSONObject("booking").get("lastname"),

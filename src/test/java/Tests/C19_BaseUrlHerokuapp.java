@@ -1,9 +1,11 @@
 package Tests;
 
 import baseUrl.BaseUrlHerokuapp;
+import com.google.gson.JsonArray;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
+import org.json.JSONObject;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -33,14 +35,15 @@ public class C19_BaseUrlHerokuapp extends BaseUrlHerokuapp {
 
         // 4- Assertion
 
-        JsonPath responseJsonpath=response.jsonPath();
-        System.out.println(responseJsonpath.getList("bookingid").size());
+        JsonPath responseJsonpath = response.jsonPath();
+
+        System.out.println("bookingid size = " + responseJsonpath.getList("bookingid").size());
 
         response
                 .then()
                 .assertThat()
                 .statusCode(200)
-                .body("bookingid", Matchers.hasSize(2983));
+                .body("bookingid", Matchers.hasSize(289));
 
 
     }

@@ -69,7 +69,7 @@ public class C15_Get_SoftAssertIleExpectedDataTesti {
         softAssert.assertEquals(responseJsonPath.get("status"),expectedData.get("status"));
         softAssert.assertEquals(responseJsonPath.get("message"),expectedData.get("message"));
         softAssert.assertEquals(responseJsonPath.get("data.id"),
-                            expectedData.getJSONObject("data").get("id"));
+                expectedData.getJSONObject("data").get("id"));
         softAssert.assertEquals(responseJsonPath.get("data.employee_name"),
                 expectedData.getJSONObject("data").get("employee_name"));
         softAssert.assertEquals(responseJsonPath.get("data.employee_salary"),
@@ -78,6 +78,7 @@ public class C15_Get_SoftAssertIleExpectedDataTesti {
                 expectedData.getJSONObject("data").get("employee_age"));
         softAssert.assertEquals(responseJsonPath.get("data.profile_image"),
                 expectedData.getJSONObject("data").get("profile_image"));
+
         softAssert.assertAll();
 
 
