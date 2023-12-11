@@ -9,7 +9,6 @@ public class BaseUrlJsonPlaceholder {
 
     protected RequestSpecification specJsonPlaceholder;
 
-
     @Before
     public void setUp(){
 

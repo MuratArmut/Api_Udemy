@@ -9,13 +9,13 @@ public class TestDataHerokuapp {
 
     /*
     {
-                        "firstname" : "Mehmet",
-                        "lastname" : “Dag",
+                        "firstname" : "Murat",
+                        "lastname" : “Armut",
                         "totalprice" : 500,
                         "depositpaid" : false,
                         "bookingdates" : {
-                                "checkin" : "2021-06-01",
-                                "checkout" : "2021-06-10"
+                                "checkin" : "2023-11-21",
+                                "checkout" : "2023-11-24"
                                 },
                         "additionalneeds" : "wi-fi"
                         }
@@ -26,11 +26,11 @@ public class TestDataHerokuapp {
         JSONObject requestBody= new JSONObject();
         JSONObject bookingdatesBody= new JSONObject();
 
-        bookingdatesBody.put("checkin","2021-06-01");
-        bookingdatesBody.put("checkout","2021-06-10");
+        bookingdatesBody.put("checkin","2023-11-21");
+        bookingdatesBody.put("checkout","2023-11-24");
 
-        requestBody.put("firstname","Mehmet");
-        requestBody.put("lastname","Dag");
+        requestBody.put("firstname","Murat");
+        requestBody.put("lastname","Armut");
         requestBody.put("totalprice",500);
         requestBody.put("depositpaid",false);
         requestBody.put("bookingdates",bookingdatesBody);
@@ -41,16 +41,16 @@ public class TestDataHerokuapp {
     }
 
     /*
-    {
+                     {
                          "bookingid":24,
                          "booking":{
-                            "firstname":"Mehmet",
-                            "lastname":"Dag",
+                            "firstname":"Murat",
+                            "lastname":"Armut",
                             "totalprice":500,
                             "depositpaid":false,
                             "bookingdates":{
-                                    "checkin":"2021-06-01",
-                                    "checkout":"2021-06-10"
+                                    "checkin":"2023-11-21",
+                                    "checkout":"2023-11-24"
                                             },
                             "additionalneeds":"wi-fi"
                                     }
@@ -69,24 +69,24 @@ public class TestDataHerokuapp {
     }
 
     /*
-    {
-                            "firstname" : "Ahmet",
-                            "lastname" : “Bulut",
-                            "totalprice" : 500,
-                            "depositpaid" : false,
-                            "bookingdates" : {
-                                     "checkin" : "2021-06-01",
-                                     "checkout" : "2021-06-10"
-                                              },
-                            "additionalneeds" : "wi-fi"
+     {
+                        "firstname" : "Murat",
+                        "lastname" : “Armut",
+                        "totalprice" : 500,
+                        "depositpaid" : false,
+                        "bookingdates" : {
+                                "checkin" : "2023-11-21",
+                                "checkout" : "2023-11-24"
+                                },
+                        "additionalneeds" : "wi-fi"
                         }
      */
 
     public static Map<String,Object> requestBodyMapOlustur(){
 
         Map<String,Object> requestBodyMap= new HashMap<>();
-        requestBodyMap.put("firstname","Ahmet");
-        requestBodyMap.put("lastname","Bulut");
+        requestBodyMap.put("firstname","Murat");
+        requestBodyMap.put("lastname","Armut");
         requestBodyMap.put("totalprice",500.0);
         requestBodyMap.put("depositpaid",false);
         requestBodyMap.put("bookingdates",bookingdatesMapOlustur());
@@ -98,27 +98,28 @@ public class TestDataHerokuapp {
     public static Map<String,String> bookingdatesMapOlustur(){
 
         Map<String,String > bookingdatesMap= new HashMap<>();
-        bookingdatesMap.put("checkin","2021-06-01");
-        bookingdatesMap.put("checkout","2021-06-10");
+        bookingdatesMap.put("checkin","2023-11-21");
+        bookingdatesMap.put("checkout","2023-11-24");
 
         return bookingdatesMap;
     }
 
     /*
     Response Body // expected data
-                        {
-                        "bookingid":24,
-                        "booking":{
-                            "firstname":"Ahmet",
-                            "lastname":"Bulut",
+                           {
+                         "bookingid":24,
+                         "booking":{
+                            "firstname":"Murat",
+                            "lastname":"Armut",
                             "totalprice":500,
                             "depositpaid":false,
                             "bookingdates":{
-                                "checkin":"2021-06-01",
-                                "checkout":"2021-06-10"
-                            ,
+                                    "checkin":"2023-11-21",
+                                    "checkout":"2023-11-24"
+                                            },
                             "additionalneeds":"wi-fi"
-                        }
+
+                          }
      */
 
     public static Map<String,Object> responseBodyMapOlustur(){
